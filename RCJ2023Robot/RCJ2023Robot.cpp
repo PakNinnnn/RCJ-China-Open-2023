@@ -66,9 +66,8 @@ void RCJ2023Robot::xsoundTest(){
 
     Serial.print("Right");
     Serial.print(RUS.read_dist_cm());
-    Serial.print( " | ");
-
-    Serial.println();
+    Serial.println( " | ");
+ 
 }
 
 void RCJ2023Robot::motorTest(){
@@ -176,6 +175,8 @@ void RCJ2023Robot::complexChaseBall(int attackWhichGoal, int ballUpperBound, int
         mtr.moveAtAngle(0, spd, offset, compassReading);
     else{
         angleOffset = map(ballDistance, 40, 100, ballOffset, 0);
+        //angleOffset = ballOffset;
+ 
 
         if(angleOffset < 0) angleOffset = 0;
         if(angleOffset > ballOffset) angleOffset = ballOffset;
@@ -220,7 +221,7 @@ int RCJ2023Robot::getXCoordinate(){
     if(leftXSound <= rightXSound)
         this->currentX = leftXSound - minX;
     else
-        this->currentX = width - rightXSound + minX;
+        this->currentX = this->width - rightXSound;
 
     return this->currentX;
 }
@@ -236,7 +237,7 @@ int RCJ2023Robot::getYCoordinate(){
     if(backXSound <= frontXSound)
         this->currentY = backXSound - this->minY;
     else
-        this->currentY = this->height - frontXSound + minY;
+        this->currentY = this->height - frontXSound;
 
     return this->currentY;
 }
@@ -254,11 +255,15 @@ void RCJ2023Robot::anotherCoordinates(){
 }
 
 int RCJ2023Robot::getAnotherX(){
-    return (width / 2) - (RUS.read_dist_cm()-LUS.read_dist_cm());
+    
+    int x = (RUS.read_dist_cm()-LUS.read_dist_cm());
+    //if(x < 0) x += 52;
+
+    return x;
 }
 
 int RCJ2023Robot::getAnotherY(){
-    return (height) - (FUS.read_dist_cm()-BUS.read_dist_cm());
+    return (FUS.read_dist_cm()-BUS.read_dist_cm());
 }
 
 

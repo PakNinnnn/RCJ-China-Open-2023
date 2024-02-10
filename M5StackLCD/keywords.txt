@@ -1,0 +1,10 @@
+M5StackLCD	KEYWORD1
+M5StackUI	KEYWORD1
+drawRect	KEYWORD2
+drawCircle	KEYWORD2
+drawTriangle	KEYWORD2
+print   KEYWORD2
+changeBgColor   KEYWORD2
+changeBrightness    KEYWORD2
+UI    KEYWORD2
+
