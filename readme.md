@@ -1,5 +1,7 @@
 # An automated soccer robot for RoboCup Junior Soccer Open
-![Alt text](overall.jpg)
+![Alt text](overall.jpg)\
+Click here for demo videos: https://drive.google.com/drive/folders/1UQwbd5lmgAEMQEA6z1JV2sSAjwiwAVFd?usp=sharing 
+
 ## Introduction
 RoboCup Junior(RCJ) is a one of the largest and most recognized robotics competition. Over the years, RCJ has expanded globally, attracting teams from numerous countries and providing a platform for teenagers to engage with technology in a meaningful way. The competition emphasizes creativity and problem-solving, aligning with educational theories that advocate active, hands-on learning experiences for students of diverse abilities and interests. \
 Website: https://junior.robocup.org/ 
@@ -105,8 +107,5 @@ We used M5Stack as the display screen. I designed the UI interface using Figma
 ![Alt text](ui.jpg)\
 
 ### 3. Motor Kinematics
-
-## Result
-Click here for demo videos: https://drive.google.com/drive/folders/1UQwbd5lmgAEMQEA6z1JV2sSAjwiwAVFd?usp=sharing 
 
 
