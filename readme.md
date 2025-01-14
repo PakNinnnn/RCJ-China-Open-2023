@@ -1,5 +1,5 @@
 # An automated soccer robot for RoboCup Junior Soccer Open
-
+![Alt text](overall.jpg)
 ## Introduction
 RoboCup Junior(RCJ) is a one of the largest and most recognized robotics competition. Over the years, RCJ has expanded globally, attracting teams from numerous countries and providing a platform for teenagers to engage with technology in a meaningful way. The competition emphasizes creativity and problem-solving, aligning with educational theories that advocate active, hands-on learning experiences for students of diverse abilities and interests. \
 Website: https://junior.robocup.org/ 
@@ -39,10 +39,11 @@ Rules: https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/rul
 ## Hardware Development
 The main focus of the project is how to locate the orange ball. An omni-directional camera system featuring a camera module and a hyperbola mirror was designed.
 
-![Alt text](robot.jpg)
+![Alt text](robot.jpg) \
 The robot was designed on Solidworks. It is made up of carbon fibre and some 3D printing components.
 
-CAD of each layer:
+CAD of each layer: 
+
 ![Alt text](frame.jpg)
 
 - Bottom layer
@@ -62,25 +63,25 @@ CAD of each layer:
     - Buttons
 
 ### 1. Wheel base
-![Alt text](wheelbase1.jpg)
+![Alt text](wheelbase1.jpg)\
 An wheel base of 4 omni-wheel with staller motor was developed to let the robot move in all directions.
 
 - Omni Wheel
-![Alt text](wheelbase.jpg)
+![Alt text](wheelbase.jpg)\
 We developed our own omni-wheel, which compose of 3 layer of carbon fibre board and small aluminium wheels crafted from CNC macine
 
 - Kicker System
-![Alt text](kicker.jpg)
+![Alt text](kicker.jpg)\
 Instead of solely pushing the ball to goal, we hope to imitate the kicking process of football players. We used electric solenoid to act as a shooter. When the ball is in front of us, we "kick" the ball.
 
 
 ### 2. Dribbler
-![Alt text](dribbler.jpg)
+![Alt text](dribbler.jpg)\
 One of our WoW factor. One general problem in soccer robot is that it is difficult for the robot "capture" the ball. When pushing the ball forward, it may slip away. We want to imitate the dribbling action of football player, so that we can have a better strategic playing, for example, dribbling the ball and turn around to hide it from the opponents.
 
 It consist of a brushless motor as source of motion, a 1:2:2 gear set, and a rod covered with silicon to create enough friction to hold the ball.
 
-![Alt text](dribbler3.jpg)
+![Alt text](dribbler3.jpg)\
 
 Testing video showing the dribbler and kicker: https://drive.google.com/file/d/1Q9YFrj2bjihNOQVifX7z66hPqvV7yJWf/view?usp=sharing 
 
@@ -97,11 +98,11 @@ We developed our own PCB board for motor drivers, main shield on Teensy micro-co
 ## Software Development
 ### 1. Computer Vision for ball tracking
 We used CNN to identify the orange ball, yellow and blue goal from the soccer field. The training set consist of 1000 images of the orange ball, the model accuracy acheived ~98.7%
-![Alt text](cv.jpg)![Alt text](cv1.jpg)
+![Alt text](cv.jpg)![Alt text](cv1.jpg)\
 
 ### 2. UI Interface
 We used M5Stack as the display screen. I designed the UI interface using Figma
-![Alt text](ui.jpg)
+![Alt text](ui.jpg)\
 
 ### 3. Motor Kinematics
 
